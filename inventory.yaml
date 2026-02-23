@@ -1,0 +1,109 @@
+subnet: 10.1.2.0/24
+domain: cbd3.xyz
+dns_server: pfsense
+hosts:
+  - hostname: pfsense
+    description: pfSense firewall/router
+    os: freebsd
+    role: infra
+    mac: "0:e0:67:1f:94:85"
+    lan_ip: "10.1.2.1"
+    dhcp_reservation: false
+    tailscale_installed: true
+    tailscale_up: true
+    tailscale_ip: "100.99.236.93"
+    tags:
+      - tag:infra
+    owner: chadd
+    notes: "Tailscale online; subnet route 10.1.2.0/24 advertised and exit-node enabled."
+
+  - hostname: tcb
+    description: synology
+    os: synology
+    role: server
+    mac: "00:11:32:92:a2:95"
+    lan_ip: "10.1.2.29"
+    dhcp_reservation: true
+    tailscale_installed: true
+    tailscale_up: true
+    tailscale_ip: "100.75.119.118"
+    tags:
+      - tag:infra
+      - tag:server
+    owner: chadd
+    notes: ""
+
+  - hostname: bachelor
+    description: mac mini running ubuntu
+    os: ubuntu
+    role: workstation
+    mac: "c8:2a:14:57:f4:f9"
+    lan_ip: "10.1.2.4"
+    dhcp_reservation: true
+    tailscale_installed: true
+    tailscale_up: true
+    tailscale_ip: "100.73.169.94"
+    tags:
+      - tag:workstation
+    owner: chadd
+    notes: ""
+
+  - hostname: rainier
+    description: macbook pro
+    os: macos
+    role: workstation
+    mac: "60:3e:5f:35:90:4b"
+    lan_ip: "10.1.2.9"
+    dhcp_reservation: true
+    tailscale_installed: true
+    tailscale_up: false
+    tailscale_ip: "100.118.47.60"
+    tags:
+      - tag:workstation
+    owner: chadd
+    notes: ""
+
+  - hostname: jefferson
+    description: macbook pro (this computer)
+    os: macos
+    role: workstation
+    mac: "66:5c:6e:d7:0c:51"
+    lan_ip: "10.1.2.6"
+    dhcp_reservation: true
+    tailscale_installed: true
+    tailscale_up: true
+    tailscale_ip: "100.113.229.81"
+    tags:
+      - tag:workstation
+    owner: chadd
+    notes: "Static DHCP mapping set to 10.1.2.6; currently still seen at 10.1.2.96 until lease renewal."
+
+  - hostname: hood
+    description: iMac
+    os: macos
+    role: workstation
+    mac: "50:ed:3c:f0:6e:79"
+    lan_ip: "10.1.2.5"
+    dhcp_reservation: true
+    tailscale_installed: true
+    tailscale_up: true
+    tailscale_ip: "100.89.29.127"
+    tags:
+      - tag:workstation
+    owner: chadd
+    notes: ""
+
+  - hostname: baker
+    description: linux laptop from System76
+    os: linux
+    role: workstation
+    mac: "bc:cd:99:88:c1:01"
+    lan_ip: "10.1.2.10"
+    dhcp_reservation: true
+    tailscale_installed: true
+    tailscale_up: true
+    tailscale_ip: "100.90.16.92"
+    tags:
+      - tag:workstation
+    owner: chadd
+    notes: "Static DHCP mapping set to 10.1.2.10; currently still leased at 10.1.2.40 until renewal."

@@ -1,0 +1,38 @@
+{
+  "groups": {
+    "group:net-admins": [
+      "you@example.com"
+    ]
+  },
+  "tagOwners": {
+    "tag:infra": ["group:net-admins"],
+    "tag:server": ["group:net-admins"],
+    "tag:workstation": ["group:net-admins"]
+  },
+  "acls": [
+    {
+      "action": "accept",
+      "src": ["group:net-admins"],
+      "dst": ["*:*"]
+    },
+    {
+      "action": "accept",
+      "src": ["autogroup:member"],
+      "dst": ["autogroup:self:*"]
+    },
+    {
+      "action": "accept",
+      "src": ["autogroup:member"],
+      "dst": ["tag:server:22,80,443"]
+    }
+  ],
+  "ssh": [
+    {
+      "action": "check",
+      "src": ["group:net-admins"],
+      "dst": ["tag:server"],
+      "users": ["autogroup:nonroot", "root"]
+    }
+  ]
+}
+
