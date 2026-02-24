@@ -7,6 +7,9 @@
 - `/Users/chadd/dev/depue-home/docs/tailscale-acl.example.json`: starter Tailscale ACL policy.
 - `/Users/chadd/dev/depue-home/docs/pfsense-audit-2026-02-21.md`: captured current pfSense state and concrete gaps.
 - `/Users/chadd/dev/depue-home/docs/pfsense-changes-2026-02-21.md`: changes applied in pfSense and remaining blocker.
+- `/Users/chadd/dev/depue-home/docs/wifi-config-2026-02-24.md`: UniFi WiFi AP configuration, channel plan, topology, and known issues.
+- `/Users/chadd/dev/depue-home/unifi-device-backup-2026-02-24.json`: full UniFi device config backup.
+- `/Users/chadd/dev/depue-home/unifi-wlan-backup-2026-02-24.json`: UniFi WLAN/SSID config backup.
 
 ## Scripts
 - `/Users/chadd/dev/depue-home/scripts/discover-lan.sh`: discover active devices on `10.1.2.0/24`.
