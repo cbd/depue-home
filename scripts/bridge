@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Wrapper usage:
+#   ./scripts/bridge chat "what's next?"
+#   ./scripts/bridge debug "ping"
+
+cmd="${1:-}"
+shift || true
+
+case "$cmd" in
+  chat)
+    exec "$(dirname "$0")/bridge-chat.sh" "$@"
+    ;;
+  debug)
+    exec "$(dirname "$0")/bridge-debug.sh" "$@"
+    ;;
+  *)
+    echo "usage: $0 {chat|debug} <message>"
+    exit 1
+    ;;
+esac
