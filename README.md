@@ -7,9 +7,12 @@
 - `/Users/chadd/dev/depue-home/docs/tailscale-acl.example.json`: starter Tailscale ACL policy.
 - `/Users/chadd/dev/depue-home/docs/pfsense-audit-2026-02-21.md`: captured current pfSense state and concrete gaps.
 - `/Users/chadd/dev/depue-home/docs/pfsense-changes-2026-02-21.md`: changes applied in pfSense and remaining blocker.
-- `/Users/chadd/dev/depue-home/docs/wifi-config-2026-02-24.md`: UniFi WiFi AP configuration, channel plan, topology, and known issues.
-- `/Users/chadd/dev/depue-home/unifi-device-backup-2026-02-24.json`: full UniFi device config backup.
-- `/Users/chadd/dev/depue-home/unifi-wlan-backup-2026-02-24.json`: UniFi WLAN/SSID config backup.
+- `/Users/chadd/dev/depue-home/docs/wifi-config-2026-03-11.md`: current UniFi WiFi config — APs, switch, channel plan, roaming, and known issues.
+- `/Users/chadd/dev/depue-home/docs/wifi-config-2026-02-24.md`: initial WiFi tuning session (superseded by 2026-03-11).
+- `/Users/chadd/dev/depue-home/unifi-device-backup-2026-03-11.json`: UniFi device config backup (post U7 Pro + switch install).
+- `/Users/chadd/dev/depue-home/unifi-wlan-backup-2026-03-11.json`: UniFi WLAN/SSID config backup.
+- `/Users/chadd/dev/depue-home/unifi-device-backup-2026-02-24.json`: UniFi device config backup (initial tuning).
+- `/Users/chadd/dev/depue-home/unifi-wlan-backup-2026-02-24.json`: UniFi WLAN/SSID config backup (initial tuning).
 - `/Users/chadd/dev/depue-home/docs/echo-openclaw-intent-matrix.md`: intent routing plan for Echo ↔ Claude ↔ OpenClaw bridge.
 
 ## Scripts
