@@ -106,4 +106,4 @@ hosts:
     tags:
       - tag:workstation
     owner: chadd
-    notes: "Static DHCP mapping set to 10.1.2.10; currently still leased at 10.1.2.40 until renewal."
+    notes: "WiFi (CBD) uses static IP 10.1.2.10 (not DHCP) — U7 Pro AP does not forward DHCP to pfSense. Ethernet adapter (00:05:1b:66:51:d1) uses DHCP normally."

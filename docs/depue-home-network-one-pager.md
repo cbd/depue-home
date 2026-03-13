@@ -1,5 +1,5 @@
 # Depue Home Network One-Pager
-**Last verified:** 2026-02-21  
+**Last verified:** 2026-03-12  
 **LAN:** `10.1.2.0/24`  
 **Primary domain:** `cbd3.xyz`  
 **Router / DNS / DHCP:** `pfsense` (`10.1.2.1`)  
@@ -14,7 +14,7 @@
 | `hood` | `10.1.2.5` | `100.89.29.127` | Yes | iMac |
 | `jefferson` | `10.1.2.6` | `100.113.229.81` | Yes | MacBook Pro |
 | `rainier` | `10.1.2.9` | `100.118.47.60` | Yes | MacBook Pro |
-| `baker` | `10.1.2.10` | `100.90.16.92` | Yes | System76 laptop |
+| `baker` | `10.1.2.10` | `100.90.16.92` | Yes | System76 laptop; WiFi uses static IP (U7 Pro DHCP bug) |
 | `vw` | `10.1.2.30` | Unknown | Unknown | Existing DNS record |
 
 ## DNS Design
